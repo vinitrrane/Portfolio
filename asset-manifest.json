@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.d0b40b1f.css",
-    "main.js": "/Portfolio/static/js/main.1978df1a.js",
+    "main.css": "/Portfolio/static/css/main.43cced7a.css",
+    "main.js": "/Portfolio/static/js/main.b5a8b9a4.js",
     "static/js/787.df06223f.chunk.js": "/Portfolio/static/js/787.df06223f.chunk.js",
     "static/media/Vendor.png": "/Portfolio/static/media/Vendor.45e0112b581941f8ae35.png",
     "static/media/CoJam.png": "/Portfolio/static/media/CoJam.45f743ca2a749c0128de.png",
@@ -9,15 +9,16 @@
     "static/media/Vinit.jpg": "/Portfolio/static/media/Vinit.38879ef21ebd1345c782.jpg",
     "static/media/Constra.png": "/Portfolio/static/media/Constra.98bc247fc90e0202f9ab.png",
     "static/media/Pizza.png": "/Portfolio/static/media/Pizza.6355a44dc3c1315d012e.png",
+    "static/media/videobg.mp4": "/Portfolio/static/media/videobg.c047515e11d1dd4200ca.mp4",
     "static/media/Expense.png": "/Portfolio/static/media/Expense.00901c44d93aad59a511.png",
     "static/media/Resume.pdf": "/Portfolio/static/media/Resume.4fd3f79580f7c8d8aaf0.pdf",
     "index.html": "/Portfolio/index.html",
-    "main.d0b40b1f.css.map": "/Portfolio/static/css/main.d0b40b1f.css.map",
-    "main.1978df1a.js.map": "/Portfolio/static/js/main.1978df1a.js.map",
+    "main.43cced7a.css.map": "/Portfolio/static/css/main.43cced7a.css.map",
+    "main.b5a8b9a4.js.map": "/Portfolio/static/js/main.b5a8b9a4.js.map",
     "787.df06223f.chunk.js.map": "/Portfolio/static/js/787.df06223f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0b40b1f.css",
-    "static/js/main.1978df1a.js"
+    "static/css/main.43cced7a.css",
+    "static/js/main.b5a8b9a4.js"
   ]
 }
