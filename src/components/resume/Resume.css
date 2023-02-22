@@ -1,0 +1,149 @@
+.resume__container {
+    max-width: 768px;
+}
+
+.resume__sections {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+
+.resume__content {
+    display: none;
+}
+
+.resume__content-active {
+    display: block;
+}
+
+.resume__data {
+    max-width: 768px;
+    width: 500px;
+    height: 6.5rem;
+    display: grid;
+    grid-template-columns: 7fr max-content 7fr;
+    gap: 1rem;
+}
+
+.resume__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.resume__subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+    color: var(--color-on-background-secondary);
+}
+
+.resume__calender {
+    font-size: var(--small-font-size);
+    color: var(--color-on-background-secondary);
+}
+
+.resume__calender i {
+    margin: 0 0.25rem;
+}
+
+.resume__rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    transform: rotate(180deg);
+    z-index: 2;
+    position: relative;
+}
+
+.resume__line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-on-background-secondary);
+    transform: translate(6px, -7px);
+    z-index: 1;
+}
+
+/* Media Queries */
+/* For large devices */
+
+@media screen and (max-width: 992px) {
+    .resume__container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* For medium devices */
+
+@media screen and (max-width: 768px) {
+    .resume__container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+
+    .resume__button {
+        font-size: var(--normal-font-size);
+    }
+
+    .resume__icon {
+        font-size: 1.4rem;
+        margin-right: var(--mb-0-25);
+    }
+
+    .resume__title {
+        font-size: var(--small-font-size);
+    }
+
+    .resume__subtitle {
+        font-size: var(--smaller-font-size);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .resume__sections {
+        grid-template-columns: initial;
+    }
+
+    .resume__button {
+        margin: 0 var(--mb-0-75);
+        font-size: var(--small-font-size);
+    }
+
+    .resume__data {
+        width: 300px;
+        gap: 0.5rem;
+        height: 7rem;
+        margin-bottom: var(--mb-0-5);
+    }
+
+    .resume__subtitle {
+        font-size: var(--smaller-font-size);
+    }
+
+    .resume__icon {
+        font-size: 1.2rem;
+        margin-right: var(--mb-0-25);
+    }
+
+    .resume__calender {
+        font-size: var(--smaller-font-size);
+
+    }
+}
+
+/* For small devices */
+
+@media screen and (max-width: 350px) {
+    .resume__data {
+        width: 275px;
+        gap: 0.5rem;
+    }
+
+    .resume__calender {
+        font-size: var(--tiny-font-size);
+    }
+}

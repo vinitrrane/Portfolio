@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* Variables */
+
+:root {
+
+  --header-height: 3rem;
+
+  /* Font  */
+
+  --body-font: "Poppins", sans-serif;
+
+  /*.5rem = 8px | 1rem = 16px ...*/
+
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /* Font weight  */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* Margin Bottom  */
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* Z-index  */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+
+  /* Colors */
+  --color-primary: #e5202b;
+  --color-primary-dark: #ca1a23;
+  --color-on-primary: #ffffff;
+  --color-background: #ffffff;
+  --color-background-secondary: #fafafa;
+  --color-on-background: #0c0c0c;
+  --color-on-background-secondary: #757575;
+
+}
+
+/* Dark Mode Colors */
+.dark {
+  --color-primary: #e5202b;
+  --color-on-primary: #FFFFFF;
+  --color-background: #0c0c0c;
+  --color-background-secondary: #171717;
+  --color-on-background: #FFFFFF;
+  --color-on-background-secondary: #bbbbbb;
+}
+
+/* Resposnive */
+
+@media screen and (max-width: 992px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+}
+
+
+
+/* Default */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-on-background);
+  font-weight: var(--font-semi-bold);
+}
+
+p {
+  color: var(--color-on-background-secondary);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Predefine */
+
+.section {
+  padding: 6rem 2rem;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-background-secondary);
+  position: relative;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--color-on-background);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+  color: var(--color-on-background-secondary);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+
+/* Align */
+
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+/* Layout */
+
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Buttons */
+
+.button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 1.25rem 2rem;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  transition: 0.4s;
+}
+
+.button:hover {
+  /* opacity: 0.8; */
+  background-color: var(--color-primary-dark);
+}
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries */
+/* For large devices */
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+    font-size: var(--normal-font-size);
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* For medium devices */
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
+  }
+
+  .button {
+    font-size: var(--small-font-size);
+  }
+}
+
+@media screen and (max-width: 576px) {}
+
+/* For small devices */
+
+@media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
+
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .button {
+    font-size: var(--smaller-font-size);
+  }
+}
